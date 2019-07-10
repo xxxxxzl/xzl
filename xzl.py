@@ -1,3 +1,5 @@
+#coding=utf8
+
 import requests
 from scrapy.selector import Selector
 import time
@@ -21,7 +23,6 @@ headers = {
 # 文件标题是否添加文章编写时间
 hasTime = True
 
-# 一直下载失败。。。 有时间再搞
 # 是否以MarkDown格式导出, 导出pdf需先下载![wkhtmltopdf](https://wkhtmltopdf.org/downloads.html)
 # mac可以直接通过 `brew install Caskroom/cask/wkhtmltopdf` 进行安装
 markdown = True
@@ -60,7 +61,7 @@ def start(name):
         get_detail(detail_url, path, title)
         # 延迟三秒后获取下一文章
         time.sleep(3)
-    print('小专栏作者' + name + '的文章已获取完成' + '\n')
+    print('小专栏' + name + '的文章已获取完成' + '\n')
     print('我们应该尊重每一位作者的付出， 请不要随意传播下载后的文件')
 
 
@@ -79,10 +80,12 @@ def get_detail(url, path, name):
         with open(path + file_name + '.md', 'w') as f:
             f.write(md)
     else:
+        # 在html中加入编码， 否则中文会乱码
+        html = "<html><head><meta charset='utf-8'></head> " + html + "</html>"
         pdfkit.from_string(html, path + file_name + '.pdf')
 
 
 if __name__ == '__main__':
     print('我们应该尊重每一位作者的付出， 请不要随意传播下载后的文件')
-    # 专栏地址，仅填写最后一位即可，如：https://xiaozhuanlan.com/abc, 填写abc即可
-    start('abc')
+    # 专栏地址，仅填写最后一位即可，如：https://xiaozhuanlan.com/The-story-of-the-programmer, 填写The-story-of-the-programmer即可
+    start('The-story-of-the-programmer')
