@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="071abb63-5d8f-414d-a3f9-3a5a9267fbbe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xzl.py" beforeDir="false" afterPath="$PROJECT_DIR$/xzl.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,17 +12,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/xzl$xzl.coverage" NAME="xzl Coverage Results" MODIFIED="1562745742286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/xzl$xzl.coverage" NAME="xzl Coverage Results" MODIFIED="1562749931351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/xzl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="634">
-              <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+            <state relative-caret-position="351">
+              <caret line="76" column="67" lean-forward="true" selection-start-line="76" selection-start-column="67" selection-end-line="76" selection-end-column="67" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#14#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -32,7 +31,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/pdfkit/api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
+            <state relative-caret-position="750">
               <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
             </state>
           </provider>
@@ -68,7 +67,13 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="iizvv &lt;iizvvizv@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -79,8 +84,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1016" />
-    <option name="y" value="212" />
+    <option name="x" value="929" />
+    <option name="y" value="204" />
     <option name="width" value="1400" />
     <option name="height" value="941" />
   </component>
@@ -169,17 +174,27 @@
       <workItem from="1562742993944" duration="2000" />
       <workItem from="1562743043602" duration="474000" />
       <workItem from="1562744786617" duration="992000" />
+      <workItem from="1562746494618" duration="689000" />
+      <workItem from="1562748337348" duration="1832000" />
     </task>
+    <task id="LOCAL-00001" summary="支持pdf格式导出">
+      <created>1562746527998</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1562746527998</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23405000" />
+    <option name="totallyTimeSpent" value="25926000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1016" y="212" width="1400" height="941" extended-state="0" />
+    <frame x="929" y="204" width="1400" height="941" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24079528" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24815905" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -190,10 +205,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32979977" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32979977" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2850412" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -204,6 +219,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="支持pdf格式导出" />
+    <option name="LAST_COMMIT_MESSAGE" value="支持pdf格式导出" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/utils.py">
@@ -295,9 +314,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/xzl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="76" column="67" lean-forward="true" selection-start-line="76" selection-start-column="67" selection-end-line="76" selection-end-column="67" />
+          <folding>
+            <element signature="e#14#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/pdfkit/api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
+        <state relative-caret-position="750">
           <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
         </state>
       </provider>
@@ -309,16 +338,6 @@
             <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xzl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

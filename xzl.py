@@ -17,7 +17,7 @@ xzl = 'https://xiaozhuanlan.com'
 
 # 通过Chrome获取到账号cookie， 模拟用户登录状态
 headers = {
-    'Cookie': 'cookie'
+    'Cookie': ''
 }
 
 # 文件标题是否添加文章编写时间
@@ -27,7 +27,9 @@ hasTime = True
 # mac可以直接通过 `brew install Caskroom/cask/wkhtmltopdf` 进行安装
 markdown = True
 
-def start(name):
+
+# 获取专栏列表
+def get_zl_list(name):
     url = xzl + "/" + name
     print('开始获取' + name + '的小专栏， 专栏地址为: ' + url)
     driver = webdriver.Safari()
@@ -65,6 +67,7 @@ def start(name):
     print('我们应该尊重每一位作者的付出， 请不要随意传播下载后的文件')
 
 
+# 获取专栏详情
 def get_detail(url, path, name):
     response = requests.get(url=url, headers=headers)
     selector = Selector(text=response.text)
@@ -88,4 +91,5 @@ def get_detail(url, path, name):
 if __name__ == '__main__':
     print('我们应该尊重每一位作者的付出， 请不要随意传播下载后的文件')
     # 专栏地址，仅填写最后一位即可，如：https://xiaozhuanlan.com/The-story-of-the-programmer, 填写The-story-of-the-programmer即可
-    start('The-story-of-the-programmer')
+    get_zl_list('The-story-of-the-programmer')
+    
