@@ -28,9 +28,16 @@ hasTime = True
 markdown = True
 
 
+# 获取订阅列表
+def get_subscribes():
+    print('开始获取订阅列表')
+    url = xzl + '/' + 'me/subscribes'
+    response = requests.get(url=url, headers=headers)
+    
+
 # 获取专栏列表
 def get_zl_list(name):
-    url = xzl + "/" + name
+    url = xzl + '/' + name
     print('开始获取' + name + '的小专栏， 专栏地址为: ' + url)
     driver = webdriver.Safari()
     driver.get(url)
@@ -92,4 +99,5 @@ if __name__ == '__main__':
     print('我们应该尊重每一位作者的付出， 请不要随意传播下载后的文件')
     # 专栏地址，仅填写最后一位即可，如：https://xiaozhuanlan.com/The-story-of-the-programmer, 填写The-story-of-the-programmer即可
     get_zl_list('The-story-of-the-programmer')
-    
+
+
