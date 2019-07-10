@@ -1,5 +1,5 @@
 # xzl
-将[小专栏](https://xiaozhuanlan.com)购买的内容通过markdown/pdf格式导出
+将[小专栏](https://xiaozhuanlan.com)的内容通过markdown/pdf格式导出
 
 # 我们应该尊重每一位作者的付出， 请不要随意传播下载后的文件
 
