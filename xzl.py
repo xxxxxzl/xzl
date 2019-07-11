@@ -33,6 +33,16 @@ markdown = True
 # 当为小书时，且`markdown=False`，是否将所有章节进行拼接为一个pdf
 xs_pdf = True
 
+def fetch_cookie():
+    """ 
+    Fetch cookie from `cookie.cache`
+    """
+    global headers
+    with open('./cookie.cache', 'r') as f:
+        print(cookie)
+        headers['Cookie'] = cookie
+    
+
 
 # 采集订阅列表
 def get_subscribes():
@@ -219,14 +229,15 @@ if __name__ == '__main__':
     print('我们应该尊重每一位作者的付出， 请不要随意传播下载后的文件\n')
     print('当浏览器自动打开后，请勿关闭浏览器，内容采集、导出完成后将会自动关闭\n')
     # 增加重连次数
+    fetch_cookie()
     requests.adapters.DEFAULT_RETRIES = 5
     # 采集小书
     # 专栏地址，仅填写最后一位即可，如：https://xiaozhuanlan.com/ios-interview, 填写/ios-interview即可
     # get_xs('/ios-interview')
     # 采集专栏
     # 专栏地址，仅填写最后一位即可，如：https://xiaozhuanlan.com/The-story-of-the-programmer, 填写/The-story-of-the-programmer即可
-    # get_zl('/kyxuDev')
+    get_zl('/colin')
     # 采集全部订阅内容
-    # get_subscribes()
+    get_subscribes()
 
 
