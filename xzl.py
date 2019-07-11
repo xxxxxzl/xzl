@@ -7,6 +7,7 @@ import html2text as ht
 import os
 from selenium import webdriver
 import pdfkit
+import browsercookie
 
 # 我们应该尊重每一位作者的付出， 请不要随意传播下载后的文件
 
@@ -14,11 +15,6 @@ import pdfkit
 
 # 小专栏基础地址
 xzl = 'https://xiaozhuanlan.com'
-
-# 通过Chrome采集到账号cookie， 模拟用户登录状态
-headers = {
-    'Cookie': ''
-}
 
 # 设置等待时长
 seconds = 3
@@ -33,15 +29,31 @@ markdown = True
 # 当为小书时，且`markdown=False`，是否将所有章节进行拼接为一个pdf
 xs_pdf = True
 
+# 通过Chrome采集到账号cookie，模拟用户登录状态
+# 此处不需要修改，将会自动从Chrome中获取cookie内容
+headers = {
+    'Cookie': ''
+}
+
+
 def fetch_cookie():
     """ 
     Fetch cookie from `cookie.cache`
     """
     global headers
-    with open('./cookie.cache', 'r') as f:
-        print(cookie)
-        headers['Cookie'] = cookie
-    
+    if os.path.exists('./cookie.cache'):
+        with open('./cookie.cache', 'r') as cookie:
+            headers['Cookie'] = cookie.read()
+    else:
+        chrome_cookie = browsercookie.chrome()
+        for cookie in chrome_cookie:
+            if cookie.name == '_xiaozhuanlan_session':
+                xzl_session = cookie.name + '=' + cookie.value
+                with open('./cookie.cache', 'w') as f:
+                    f.write(xzl_session)
+                headers['Cookie'] = xzl_session
+        if not xzl_session:
+            print('\n\n\n\n请先在Chrome上登录小专栏\n\n\n\n')
 
 
 # 采集订阅列表
@@ -229,15 +241,16 @@ if __name__ == '__main__':
     print('我们应该尊重每一位作者的付出， 请不要随意传播下载后的文件\n')
     print('当浏览器自动打开后，请勿关闭浏览器，内容采集、导出完成后将会自动关闭\n')
     # 增加重连次数
+    # requests.adapters.DEFAULT_RETRIES = 5
+    # 获取cookie
     fetch_cookie()
-    requests.adapters.DEFAULT_RETRIES = 5
     # 采集小书
     # 专栏地址，仅填写最后一位即可，如：https://xiaozhuanlan.com/ios-interview, 填写/ios-interview即可
     # get_xs('/ios-interview')
     # 采集专栏
     # 专栏地址，仅填写最后一位即可，如：https://xiaozhuanlan.com/The-story-of-the-programmer, 填写/The-story-of-the-programmer即可
-    get_zl('/colin')
+    get_zl('/The-story-of-the-programmer')
     # 采集全部订阅内容
-    get_subscribes()
+    # get_subscribes()
 
 

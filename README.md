@@ -16,3 +16,25 @@
 
 #### 由于获取目录时需要模拟鼠标滑动， 所以请打开Safari的允许远程自动化， 开发->允许远程自动化
 ![允许远程自动化](./img/允许远程自动化.png)
+
+### 做 virtualenv 虚拟环境，直接安装全部依赖：
+
+    # 全局安装 virtualenv
+    $ pip3 install virtualenv 
+
+    # clone repo
+    $ git clone git@github.com:iizvv/xzl.git & cd xzl
+
+    # 创建虚拟环境
+    $ virtualenv venv
+
+    # 激活环境
+    $ source venv/bin/active
+
+    # 安装依赖
+    $ pip3 install -r requirements.txt
+
+    # 执行脚本
+    $ python3 xzl.py
+
+- 感谢[瓜神](https://github.com/Desgard)提供的方案
