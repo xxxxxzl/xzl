@@ -4,7 +4,6 @@
 将[小专栏](https://xiaozhuanlan.com)的内容通过markdown/pdf格式导出
 
 # 小专栏规则修改, 目前仅能导出免费专栏内容
-###### [一个神秘地址](https://github.com/xxxxxzl/xxxzl)
 # 我们应该尊重每一位作者的付出， 请不要随意传播下载后的文件
 
 # 使用前请确定已在Chrome中登录过小专栏, 否则可能会出现导出失败的问题
