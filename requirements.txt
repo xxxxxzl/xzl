@@ -6,7 +6,7 @@ certifi==2019.6.16
 cffi==1.12.3
 chardet==3.0.4
 constantly==15.1.0
-cryptography==2.7
+cryptography==3.2
 cssselect==1.0.3
 entrypoints==0.3
 html2text==2018.1.9
