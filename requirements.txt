@@ -14,7 +14,7 @@ hyperlink==19.0.0
 idna==2.8
 incremental==17.5.0
 keyring==19.0.2
-lxml==4.3.4
+lxml==4.6.2
 lz4==2.1.10
 parsel==1.5.1
 pdfkit==0.6.1
