@@ -34,6 +34,6 @@ service-identity==18.1.0
 setuptools==40.8.0
 six==1.12.0
 Twisted==19.7.0
-urllib3==1.25.3
+urllib3==1.25.8
 w3lib==1.20.0
 zope.interface==4.6.0
