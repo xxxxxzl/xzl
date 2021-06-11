@@ -18,7 +18,7 @@ lxml==4.3.4
 lz4==2.1.10
 parsel==1.5.1
 pdfkit==0.6.1
-pip==19.0.3
+pip==19.2
 pyasn1==0.4.5
 pyasn1-modules==0.2.5
 pycparser==2.19
