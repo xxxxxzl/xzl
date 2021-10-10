@@ -28,7 +28,7 @@ PyHamcrest==1.9.0
 pyOpenSSL==19.0.0
 queuelib==1.5.0
 requests==2.22.0
-Scrapy==1.6.0
+Scrapy==1.8.1
 selenium==3.141.0
 service-identity==18.1.0
 setuptools==40.8.0
